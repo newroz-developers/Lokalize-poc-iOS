@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		89B5DA862694788100F4FC74 /* LocalizeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B5DA842694788100F4FC74 /* LocalizeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89B5DA8D269478B500F4FC74 /* ConfigureLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5DA8C269478B500F4FC74 /* ConfigureLocalize.swift */; };
+		89B5DA8F2694793300F4FC74 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5DA8E2694793300F4FC74 /* Localization.swift */; };
+		89B5DA912694793900F4FC74 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5DA902694793900F4FC74 /* LocalizationManager.swift */; };
+		89B5DA932694794000F4FC74 /* LanguageServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B5DA922694794000F4FC74 /* LanguageServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89B5DA812694788100F4FC74 /* LocalizeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalizeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B5DA842694788100F4FC74 /* LocalizeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizeFramework.h; sourceTree = "<group>"; };
 		89B5DA852694788100F4FC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89B5DA8C269478B500F4FC74 /* ConfigureLocalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureLocalize.swift; sourceTree = "<group>"; };
+		89B5DA8E2694793300F4FC74 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		89B5DA902694793900F4FC74 /* LocalizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		89B5DA922694794000F4FC74 /* LanguageServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageServiceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				89B5DA842694788100F4FC74 /* LocalizeFramework.h */,
 				89B5DA852694788100F4FC74 /* Info.plist */,
+				89B5DA8C269478B500F4FC74 /* ConfigureLocalize.swift */,
+				89B5DA8E2694793300F4FC74 /* Localization.swift */,
+				89B5DA902694793900F4FC74 /* LocalizationManager.swift */,
+				89B5DA922694794000F4FC74 /* LanguageServiceManager.swift */,
 			);
 			path = LocalizeFramework;
 			sourceTree = "<group>";
@@ -94,6 +106,7 @@
 				TargetAttributes = {
 					89B5DA802694788100F4FC74 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B5DA8F2694793300F4FC74 /* Localization.swift in Sources */,
+				89B5DA912694793900F4FC74 /* LocalizationManager.swift in Sources */,
+				89B5DA8D269478B500F4FC74 /* ConfigureLocalize.swift in Sources */,
+				89B5DA932694794000F4FC74 /* LanguageServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,7 @@
 		89B5DA8A2694788100F4FC74 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P7Q2942Q55;
@@ -269,6 +287,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LocalizeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.newroz.LocalizeFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +305,7 @@
 		89B5DA8B2694788100F4FC74 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P7Q2942Q55;
@@ -293,6 +314,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = LocalizeFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
