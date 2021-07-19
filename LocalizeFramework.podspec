@@ -16,6 +16,6 @@ LocalizeFramework is quickest, most convenient, and safest way to integrate mult
   s.ios.deployment_target = '11.0'
   s.swift_version = "5.0"
   s.source_files = 'LocalizeFramework/*'
- 
+  s.exclude_files = 'LocalizeFramework/*.plist'
 
 end
