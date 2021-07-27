@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LocalizeFramework'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'SDK for interfacing multiple languages using localize key APIs.'
 
   s.description      = <<-DESC
