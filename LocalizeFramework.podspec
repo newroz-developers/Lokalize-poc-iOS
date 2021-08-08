@@ -11,7 +11,7 @@ LocalizeFramework is quickest, most convenient, and safest way to integrate mult
   s.license          = { :type => 'Apache v2', :file => 'LICENSE' }
   
   s.author           = { 'Fastpay' => 'rakib@newroztech.com' }
-  s.source           = { :https => 'https://vasantor.com/libs/ios/LocalizeFramework.zip' }
+  s.source           = { :http => 'https://vasantor.com/libs/ios/LocalizeFramework.zip' }
 
   s.ios.deployment_target = '11.0'
   s.swift_version = "5.0"
