@@ -10,7 +10,7 @@ LocalizeFramework is quickest, most convenient, and safest way to integrate mult
   s.homepage         = 'https://github.com/newroz-developers/Lokalize-poc-iOS'
   s.license          = { :type => 'Apache v2', :file => 'LICENSE' }
   
-  s.author           = { 'Fastpay' => 'rakib@newroztech.com' }
+  s.author           = { 'rakib' => 'rakib@newroztech.com' }
   s.source           = { :http => 'https://vasantor.com/libs/ios/LocalizeFramework.zip' }
 
   s.ios.deployment_target = '11.0'
